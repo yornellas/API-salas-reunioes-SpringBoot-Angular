@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -7,6 +8,10 @@ import { CreateRoomComponent } from './components/create-room/create-room.compon
 import { RoomDetailsComponent } from './components/room-details/room-details.component';
 import { RoomListComponent } from './components/room-list/room-list.component';
 import { UpdateRoomComponent } from './components/update-room/update-room.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +19,16 @@ import { UpdateRoomComponent } from './components/update-room/update-room.compon
     CreateRoomComponent,
     RoomDetailsComponent,
     RoomListComponent,
-    UpdateRoomComponent
+    UpdateRoomComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

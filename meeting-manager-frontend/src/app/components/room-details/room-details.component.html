@@ -1,1 +1,35 @@
-<p>room-details works!</p>
+<div class="container-fluid">
+  <div class="container my-5">
+    <h1>Room Details</h1>
+    <hr/>
+  </div>
+  <div class="container">
+    <div class="d-inline-flex align-items-end">
+      <div class="me-5">
+        <div>
+          <label>
+            <strong>Name: </strong>
+          </label> {{room.name}}
+        </div>
+        <div>
+          <label>
+            <strong>Date: </strong>
+          </label> {{room.date}}
+        </div>
+        <div>
+          <label>
+            <strong>Start Hour: </strong>
+          </label> {{room.startHour}}
+        </div>
+        <div>
+          <label>
+            <strong>End Hour: </strong>
+          </label> {{room.endHour}}
+        </div>
+      </div>
+      <button (click)="listRooms()" class="btn btn-dark ms-5">Back to Room List</button>
+    </div>
+
+  </div>
+</div>
+
